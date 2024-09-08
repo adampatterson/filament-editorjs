@@ -26,7 +26,7 @@ document.addEventListener("alpine:init", () => {
             blob,
             (uploadedFilename) => {
               this.$wire
-                .getComponentFileAttachmentUrl(statePath)
+                .getFormComponentFileAttachmentUrl(statePath)
                 .then((url) => {
                   if (!url) {
                     return resolve({
